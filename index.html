@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hallah, Be My Valentine?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="bg-hearts" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <button id="music-toggle" class="music-toggle" aria-label="Toggle music">
+    <span class="music-icon">❤</span>
+  </button>
+  <audio id="bg-music" preload="none" loop muted autoplay>
+    <source src="vdaymusic.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main class="wrap">
+    <section class="card" aria-live="polite">
+      <p class="eyebrow">For Hallah 💌</p>
+      <h1 id="question" class="question" data-text="Hallah Abdallah, will you be my Valentine? 💖"></h1>
+      <p class="subtext">Hallah, you mean the world to me 💖</p>
+
+      <div class="gif-wrap">
+        <img
+          id="main-gif"
+          src="https://media.giphy.com/media/v6aOjy0Qo1fIA/giphy.gif"
+          alt="Cute puppy with begging eyes"
+        />
+        <p id="gif-caption" class="gif-caption">Please say yes 🥺</p>
+      </div>
+
+      <div class="countdown" aria-live="polite">
+        <span class="countdown-label">Countdown to Valentine's Day:</span>
+        <span id="countdown-timer" class="countdown-timer">Loading...</span>
+      </div>
+
+      <p class="promise">I promise unlimited cuddles 😌</p>
+
+      <div class="buttons">
+        <button id="yes-btn" class="btn yes">YES 💘</button>
+        <button id="no-btn" class="btn no">NO 💔</button>
+      </div>
+
+      <div id="tease" class="tease" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <div id="note-container" aria-hidden="true"></div>
+
+  <div id="modal" class="modal" role="dialog" aria-hidden="true">
+    <div class="modal-content">Best decision ever 😌💍</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
